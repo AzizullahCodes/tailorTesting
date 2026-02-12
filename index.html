@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailor Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tailor Management System</h1>
+
+    <form id="orderForm">
+      <h2>New Order</h2>
+      <div class="form-grid">
+
+        <div>
+          <label for="name">Customer Name</label>
+          <input type="text" id="name" placeholder="Enter Name" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter Phone" required>
+        </div>
+
+        <div>
+          <label for="dressType">Dress Type</label>
+          <select id="dressType" required>
+            <option value="">Select</option>
+            <option>Men</option>
+            <option>Women</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="length">Length</label>
+          <input type="number" id="length" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="shoulder">Shoulder</label>
+          <input type="number" id="shoulder" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="chest">Chest / Bust</label>
+          <input type="number" id="chest" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="waist">Waist</label>
+          <input type="number" id="waist" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="hip">Hip</label>
+          <input type="number" id="hip" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="arm">Arm Length</label>
+          <input type="number" id="arm" placeholder="cm">
+        </div>
+
+        <div>
+          <label for="neck">Neck</label>
+          <input type="number" id="neck" placeholder="cm">
+        </div>
+
+    
+        
+
+        <div class="notes-field">
+          <label for="notes">Notes</label>
+          <textarea id="notes" placeholder="Additional notes..."></textarea>
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn-primary">Save Order</button>
+    </form>
+
+    <h2>Customer Records</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Dress</th>
+            <th>Length</th>
+            <th>Shoulder</th>
+            <th>Chest</th>
+            <th>Waist</th>
+            <th>Hip</th>
+            <th>Arm</th>
+            <th>Neck</th>
+            <th>Receiving</th>
+            <th>Delivery</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will populate here -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>
