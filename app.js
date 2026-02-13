@@ -113,22 +113,22 @@ function submitFun() {
 }
 
 
-// get data function 
-let search = '03347257178'
-function showData(){
+// // get data function 
+// let search = '03347257178'
+// function showData(){
 
-    let get = localStorage.getItem('customers');
-    let jsonGet = JSON.parse(get);
-    console.log(jsonGet)
+//     let get = localStorage.getItem('customers');
+//     let jsonGet = JSON.parse(get);
+//     console.log(jsonGet)
     
-    let d = jsonGet.find((a)=>{
-        return a.id == search
-    })
-    console.log(d)
-    if(d){
-        console.log('user registered')
-    }
-    else{
-        console.log('user not registered')
-    }
-}
+//     let d = jsonGet.find((a)=>{
+//         return a.id == search
+//     })
+//     console.log(d)
+//     if(d){
+//         console.log('user registered')
+//     }
+//     else{
+//         console.log('user not registered')
+//     }
+// }
